@@ -1,0 +1,22 @@
+ALGORITHME EpargneDeMohamed
+
+VARIABLES
+    somme , taux : Réel
+    tableau Epargne(20) : Réel
+    i : Entier
+
+DEBUT
+
+    somme <-- 1000
+    taux <-- 0.02
+
+    POUR i <-- 0 à 20 pas 1 FAIRE
+        Epargne(i) <-- somme
+        somme <-- somme * (1 + taux)
+    FIN POUR
+
+    POUR i <-- 0 à 20 pas 1 FAIRE
+        ecrire("Anniversaire de Mohamed", i ,"an : ", Epargne(i), " Dhs")
+    FIN POUR
+
+FIN
